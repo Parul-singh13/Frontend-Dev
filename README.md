@@ -1,1 +1,1 @@
-css-model topic
+css-classes topic
