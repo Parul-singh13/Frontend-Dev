@@ -1,0 +1,214 @@
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+Answer-
+1.Frontend Development deals with the things which can be directly accessed by user.
+It focuses on the user interface and user experience.
+Technology used here are HTML for structure,CSS for styling,JavaScript for interactivity and framework are react and angular.
+For example-E-commerce website:
+The product images, Add to Cart Button, ratings and menus are all frontend.
+Backend Development- it focuses on the server side- the part users don't see. It handles data storage, security and logic behind the scenes.
+Technology used here are python , java,node.js,PHP for language; MYSQL,MongoDB ,PostgreSQL for database;Django , Express.js and Spring Boot for framework.
+For example:
+Add to Cart :
+The backend store your selected product in user cart (database).
+Checks product availability and update inventory.
+
+FullStack development works on both frontend plus backend, it means integrating both the sides, the
+user side and the server side.
+Technologies used-
+A mix of both what we have discussed earlier
+Example- The full fledge website of amazon which is working.
+
+
+
+
+
+2. Create a simple diagram showing how the client-server model works in web architecture.
+Ans- Here is a simple text-based diagram illustrating the client-server model:
+
++----------------+                           +-----------------+
+|                |                           |                 |
+|   Your         |                           |   Web Server    |
+|   Computer     | -- 1. HTTP Request -----> |   (e.g., Google)|
+|   (Client)     |                           |                 |
+|                | <---- 2. HTTP Response -- |                 |
++----------------+                           +-----------------+
+
+
+Explanation:
+
+Client (Your Computer): This is your device (laptop, phone) and the web browser (like Chrome or Firefox) you are using. It requests information.
+Server: This is a powerful computer that stores the website's files and data. Its job is to listen for requests.
+
+The Flow:
+1. Request: When you type google.com into your browser, your computer (the client) sends an HTTP request over the internet to Google's server asking for the webpage.
+2. Response: The Google server receives the request, finds the necessary files (HTML, CSS, JavaScript), and sends them back to your computer as an HTTP response. Your browser then assembles these files to display the webpage.
+
+
+3. Describe how a browser requests and displays a web page from a web server.
+Ans- When you type a website’s URL in your browser:
+a-The browser sends a request to the web server.
+b-The web server finds the right files (like HTML, CSS, and JS).
+c-It sends those files back to the browser.
+d-The browser reads them and shows the final web page on your screen.
+e-If the page has images or videos, the browser requests those too.
+
+This whole process happens in just a few seconds.
+
+
+4. Identify and list the tools required to set up a web development environment. Explain the purpose of each.
+Ans- To start building websites, you only need a few essential tools. Here are the core components of a basic web development environment:
+
+Code Editor
+Purpose: This is a specialized text editor where you write your code. Unlike a regular word processor, it provides features that make coding easier, such as syntax highlighting (coloring code to make it readable), auto-completion, and error checking.
+Examples: Visual Studio Code (VS Code), Sublime Text, Atom.
+
+Web Browser
+Purpose: This is where you test and view your website. Modern browsers come with powerful "Developer Tools" that let you inspect your HTML, debug your CSS, and test your JavaScript in real-time. This is crucial for seeing how your code actually looks and functions.
+Examples: Google Chrome, Mozilla Firefox, Microsoft Edge.
+
+Version Control System
+Purpose: This tool helps you track changes to your code over time. It's like a "save" button on steroids. If you make a mistake, you can easily revert to a previous version. It's also essential for collaborating with other developers on a project.
+Example: Git. (Often used with a hosting service like GitHub or GitLab to store code online).
+
+Command Line Interface (CLI)
+Purpose: A text-based interface to interact with your computer. It's used for tasks like running Git commands, installing software packages, and starting local development servers. It's faster and more powerful for many development tasks than a graphical interface.
+Examples: Terminal (on macOS/Linux), Command Prompt or PowerShell (on Windows).
+
+
+5. Explain what a web server is and give examples of commonly used servers.
+Ans- A web server is a computer program (or the physical computer it runs on) that stores website files (HTML, CSS, images, etc.) and delivers them to users' web browsers upon request.
+
+Think of it like a librarian in a massive library.
+The library is the server's hard drive, containing all the books (website files).
+You are the user with your web browser.
+When you request a webpage (ask for a book), the librarian (the web server software) finds the right book and gives it to you.
+Its primary job is to "serve" content over the internet. When you type a URL into your browser, you are sending a request to a web server. The server finds the requested file and sends it back to your browser, which then displays it.
+
+Commonly Used Web Servers:
+
+Apache HTTP Server: One of the oldest and most widely used web servers. It's free, open-source, and known for its flexibility and power.
+Nginx (pronounced "Engine-X"): A modern, high-performance web server. It's known for being lightweight, fast, and excellent at handling many simultaneous connections, which is why it's often used for very busy websites.
+Microsoft Internet Information Services (IIS): A web server developed by Microsoft that runs on Windows operating systems. It's tightly integrated with other Microsoft technologies.
+LiteSpeed: A high-performance, commercial web server that is often used as a drop-in replacement for Apache due to its speed.
+
+
+6. Define the roles of a frontend developer, backend developer, and database administrator in a project.
+Ans- In a typical web project, the work is divided among specialists. Here are the distinct roles:
+
+Frontend Developer
+
+Focus: The user-facing part of the application (the client-side).
+Responsibilities: Their main job is to translate UI/UX designs into code. They build the visual elements that users see and interact with, ensuring the website is responsive (works on all screen sizes) and user-friendly.
+Tools: HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.
+
+Backend Developer
+
+Focus: The server-side logic and functionality that the user doesn't see.
+Responsibilities: They build and maintain the "brains" of the application. This includes writing the core application logic, creating APIs (Application Programming Interfaces) for the frontend to communicate with, managing user authentication, and connecting to the database.
+Tools: Server-side languages like Node.js, Python, Java, or PHP, and server frameworks like Express or Django.
+
+Database Administrator (DBA)
+
+Focus: The database where all the application's data is stored.
+Responsibilities: The DBA is responsible for designing, implementing, and maintaining the database. They ensure data is secure, backed up regularly, and optimized for performance. They manage user access, write complex queries to retrieve data, and troubleshoot any database-related issues.
+Tools: Database systems like MySQL, PostgreSQL, MongoDB, or Oracle SQL.
+
+In a nutshell: the Frontend Developer builds the car's interior and dashboard, the Backend Developer builds the engine, and the Database Administrator manages the fuel tank and ensures the fuel lines are clean and efficient.
+
+
+7. Install VS Code and configure it for HTML, CSS, and JavaScript development. Take a screenshot of the setup.
+Ans- Steps to set up VS Code:
+
+a-Install Visual Studio Code on your computer.
+b-Add useful extensions:
+  Live Server (to preview your site in real time)
+  HTML CSS Support (for auto-suggestions)
+  Prettier (for clean code formatting)
+c-Create three files — index.html, style.css, and script.js.
+d-Right-click on your index.html → select “Open with Live Server” to see your site.
+
+
+8. Explain the difference between static and dynamic websites. Provide an example of each.
+Ans- The main difference between static and dynamic websites is how their content is generated and delivered.
+
+Static Websites
+
+What they are: These are the simplest type of websites. The content is fixed and delivered to every user exactly as it is stored on the server. Each page is a separate HTML file, and to change the content, a developer must manually edit the file.
+How they work: When you request a page, the server just finds the pre-built HTML file and sends it directly to your browser.
+Characteristics: Fast, secure, and cheap to host. However, they are not interactive and are difficult to update if they have many pages.
+Example: A personal portfolio website or a simple brochure website for a small business. The content (like an "About Me" page or a "Contact" page) doesn't change unless the developer uploads a new version of the file.
+
+Dynamic Websites
+
+What they are: These websites can display different content for different users or based on user interactions. The content is generated "on the fly" by the server before it's sent to your browser.
+How they work: When you request a page, the server runs code (e.g., PHP or Python) that pulls information from a database to build the HTML page specifically for your request.
+Characteristics: Interactive, personalized, and easy to update content through a Content Management System (CMS). They are more complex and expensive to build and host.
+Example: Facebook or any social media site. Your news feed is different from your friend's feed. The content is dynamically generated based on who you are, who you follow, and what's trending. Other examples include e-commerce sites (like Amazon) and news websites.
+
+
+9. Research and list five web browsers. Explain how rendering engines differ between them.
+Ans- A rendering engine (or layout engine) is the core component of a web browser that is responsible for taking the HTML, CSS, and other files and "drawing" them onto your screen as a visual webpage.
+Here are five major web browsers and their rendering engines:
+
+Google Chrome
+Rendering Engine: Blink. Blink is a fork of the WebKit engine (originally developed by Apple). It was created by Google and is known for its speed and compliance with modern web standards. It's an open-source project and is also used by Microsoft Edge, Opera, and many other browsers.
+
+Mozilla Firefo
+Rendering Engine: Gecko. Gecko is Mozilla's own engine, developed independently from Blink/WebKit. It has a strong focus on open web standards and user privacy. While Blink dominates the market, Gecko is the main alternative, which helps prevent a single engine from having a complete monopoly on how the web works.
+
+Apple Safari
+Rendering Engine: WebKit. WebKit is the engine developed by Apple that powers Safari. It's known for its fast performance and energy efficiency, especially on Apple devices. Blink was originally based on WebKit, but the two have since diverged and are developed separately.
+
+Microsoft Edge
+Rendering Engine: Blink. Originally, Edge used its own engine called EdgeHTML. However, in 2019, Microsoft rebuilt Edge from the ground up using the Chromium project, which means it now uses the same Blink rendering engine as Google Chrome. This improved its compatibility and performance significantly.
+
+Opera
+Rendering Engine: Blink. Opera used to have its own proprietary engine called Presto. Like Microsoft, they later switched to the Chromium project and now use the Blink engine.
+
+Key Difference: The primary difference between these engines is how they interpret and implement web standards. While they all aim to follow the official rules of HTML and CSS, they can have minor variations in how they render certain elements, which can sometimes lead to small visual differences or bugs between browsers. The dominance of Blink has made web development more consistent, but the existence of Gecko and WebKit is crucial for keeping the web open and competitive.
+
+
+10. Draw a labeled diagram showing the basic web architecture flow — client, server, database, and APIs.
+Ans- Here is a text-based diagram showing the complete flow of a modern web application:
+
++-----------+                +------------------+                +-----------+
+|           |                |                  |                |           |
+|  Client   | -- Request --> |    Web Server    |                | Database  |
+| (Browser) |                | (Backend Logic)  | <-- Query ---- | (Storage) |
+|           |                |                  | ---- Data -->  |           |
++-----------+                +--------+---------+                +-----------+
+      ^                               |
+      |                               | API Request
+      |                               |
+      +-------- Response -------------+
+                                      |
+                                      v
+                             +-------------------+
+                             |                   |
+                             |   Third-Party API |
+                             | (e.g., Google Maps)|
+                             |                   |
+                             +-------------------+
+
+Explanation of the Flow:
+
+Client (Browser): The user interacts with the website on their browser. When they perform an action (like clicking a button), the client sends an HTTP Request to the server.
+Web Server (Backend): The server receives the request. This is where the main application logic lives.
+If the request needs data (like a user's profile information), the server sends a Query to the Database.
+The Database finds the requested data and sends it back to the server.
+
+APIs (Application Programming Interfaces):
+The server might also need to communicate with other services. For example, to show a map, it would send a request to a Third-Party API like Google Maps. The API then sends the map data back to the server.
+Response: The server gathers all the necessary information (from the database, from APIs, etc.) and packages it into an HTTP Response. This response is often in the form of HTML (for a full page load) or JSON (for data).
+Back to the Client: The client's browser receives the response and uses it to update the webpage, displaying the new information to the user.
+
+
+
+
+
+
+
+
+
+3.
