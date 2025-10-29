@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors Demo</title>
+    <link rel="stylesheet" href="css-advanced.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <h1>Advanced CSS Selectors Demonstration</h1>
+            <p>Explore the power of CSS selectors with interactive examples</p>
+        </header>
+
+        <!-- Section 1: Form with Attribute Selectors -->
+        <section class="demo-section">
+            <h2>Attribute Selectors</h2>
+            <p class="section-description">Styling elements based on their attributes</p>
+            
+            <form class="demo-form">
+                <div class="form-group">
+                    <label>Text Input:</label>
+                    <input type="text" placeholder="Type here...">
+                </div>
+                
+                <div class="form-group">
+                    <label>Email Input:</label>
+                    <input type="email" placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label>Password Input:</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                
+                <div class="form-group">
+                    <label>Number Input:</label>
+                    <input type="number" placeholder="123">
+                </div>
+                
+                <div class="form-group">
+                    <label>Disabled Input:</label>
+                    <input type="text" disabled value="Disabled field">
+                </div>
+                
+                <div class="form-group">
+                    <label>Required Input:</label>
+                    <input type="text" required placeholder="Required field">
+                </div>
+            </form>
+        </section>
+
+        <!-- Section 2: Links with Attribute Selectors -->
+        <section class="demo-section">
+            <h2>Link Attribute Selectors</h2>
+            <p class="section-description">Different styles for internal and external links</p>
+            
+            <ul class="links-list">
+                <li><a href="https://www.google.com">External Link (HTTPS)</a></li>
+                <li><a href="http://example.com">External Link (HTTP)</a></li>
+                <li><a href="#section1">Internal Link</a></li>
+                <li><a href="document.pdf">PDF Document</a></li>
+                <li><a href="image.jpg">Image File</a></li>
+                <li><a href="archive.zip">ZIP Archive</a></li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Pseudo-classes -->
+        <section class="demo-section">
+            <h2>Pseudo-classes</h2>
+            <p class="section-description">Interactive states and structural selectors</p>
+            
+            <div class="buttons-group">
+                <button class="demo-button">Hover Me</button>
+                <button class="demo-button">Focus Me</button>
+                <button class="demo-button">Click Me</button>
+            </div>
+            
+            <ul class="styled-list">
+                <li>First Item (1st child)</li>
+                <li>Second Item (2nd child)</li>
+                <li>Third Item (3rd child - odd)</li>
+                <li>Fourth Item (4th child - even)</li>
+                <li>Fifth Item (5th child - odd)</li>
+                <li>Sixth Item (6th child - even)</li>
+                <li>Seventh Item (Last child)</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: Pseudo-elements -->
+        <section class="demo-section">
+            <h2>Pseudo-elements</h2>
+            <p class="section-description">Adding content with ::before and ::after</p>
+            
+            <div class="quote-box">
+                <p class="quote">Success is not final, failure is not fatal: it is the courage to continue that counts.</p>
+            </div>
+            
+            <ul class="checklist">
+                <li class="completed">Complete CSS basics</li>
+                <li class="completed">Learn advanced selectors</li>
+                <li class="pending">Master animations</li>
+                <li class="pending">Build projects</li>
+            </ul>
+        </section>
+
+        <!-- Section 5: Combinators -->
+        <section class="demo-section">
+            <h2>CSS Combinators</h2>
+            <p class="section-description">Different ways to combine selectors</p>
+            
+            <div class="combinator-demo">
+                <h3>Descendant Combinator (space)</h3>
+                <div class="parent">
+                    <p>Direct paragraph in parent</p>
+                    <div class="child">
+                        <p>Nested paragraph in child</p>
+                    </div>
+                </div>
+                
+                <h3>Child Combinator (>)</h3>
+                <div class="direct-parent">
+                    <p>Direct child paragraph</p>
+                    <div>
+                        <p>Nested paragraph (not direct child)</p>
+                    </div>
+                </div>
+                
+                <h3>Adjacent Sibling (+)</h3>
+                <div class="sibling-demo">
+                    <h4>Heading</h4>
+                    <p>First paragraph (adjacent sibling)</p>
+                    <p>Second paragraph</p>
+                </div>
+                
+                <h3>General Sibling (~)</h3>
+                <div class="general-sibling-demo">
+                    <h4>Heading</h4>
+                    <p>First sibling paragraph</p>
+                    <div>Some div</div>
+                    <p>Another sibling paragraph</p>
+                    <p>Yet another sibling paragraph</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            <p>Advanced CSS Selectors Demo - 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Container using Flexbox for centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Common box styles */
+.box {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.box p {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Box 1: Fixed dimensions using pixels */
+.box1 {
+    width: 300px;
+    height: 200px;
+    background-color: #ff6b6b;
+    overflow: hidden;
+}
+
+/* Box 2: Percentage width with viewport height */
+.box2 {
+    width: 50%;
+    height: 30vh;
+    min-height: 150px;
+    max-width: 500px;
+    background-color: #4ecdc4;
+    overflow: visible;
+}
+
+/* Box 3: Em-based dimensions with overflow */
+.box3 {
+    width: 20em;
+    height: 15em;
+    background-color: #f7b731;
+    overflow: auto;
+    text-align: left;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .box2 {
+        width: 90%;
+    }
+}
+
+/* Scrollbar styling for Box 3 */
+.box3::-webkit-scrollbar {
+    width: 8px;
+}
+
+.box3::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.box3::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.box3::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
