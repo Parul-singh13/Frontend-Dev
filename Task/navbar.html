@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .navbar {
+            background-color: #333; /* Dark background for the nav bar */
+            overflow: hidden; /* Ensures it contains its floated children (if using float) */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for easy horizontal layout */
+        }
+
+        .navbar li a {
+            display: block; /* Makes the whole link area clickable */
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none; /* Remove underline from links */
+
+            /* Add hover color transition */
+            transition: background-color 0.4s ease; /* 'ease' makes it feel smoother */
+        }
+
+        /* Add hover color transition */
+        .navbar li a:hover {
+            background-color: #555; /* A slightly lighter dark color on hover */
+            color: #ffc107; /* Optional: change text color on hover too */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

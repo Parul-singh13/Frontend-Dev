@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes Example</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 30px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    /* ----- Links ----- */
+    a {
+      color: blue;
+      text-decoration: none;
+      padding: 5px;
+    }
+    a:hover {
+      color: red;
+    }
+    a:focus {
+      outline: 2px solid orange;
+    }
+    a:active {
+      color: white;
+      background: blue;
+    }
+
+    /* ----- Buttons ----- */
+    button {
+      background: lightgreen;
+      border: 1px solid green;
+      padding: 6px 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: green;
+      color: white;
+    }
+    button:focus {
+      outline: 2px solid orange;
+    }
+    button:active {
+      background: darkgreen;
+    }
+
+    /* ----- List items ----- */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 6px;
+      background: #ddd;
+      margin: 4px 0;
+    }
+    li:nth-child(odd) {
+      background: #bbb;
+    }
+    li:hover {
+      background: orange;
+    }
+
+    .explain {
+      color: #555;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Link</h2>
+  <a href="#">Hover Link</a>
+
+  <h2>Button</h2>
+  <button>Hover Button</button>
+
+  <h2>List</h2>
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+  </ul>
+
+</body>
+</html>

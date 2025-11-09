@@ -1,0 +1,66 @@
+<!--Task 6 CSS Animation Demo
+Build 3 animated items (e.g., moving box, bouncing ball).
+Use @keyframes, animation-delay, animation-iteration-count, animation-direction.
+Centered + smooth ease-in-out timing.
+ping pong game animation
+ball and square inside square-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Demo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #dadcd3;
+            gap:100px;
+        }
+        .box, .ball, .square {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 10px;
+            animation-timing-function: ease-in-out;
+        }
+        .box {
+            animation: moveBox 4s alternate infinite;
+        }
+        .ball {
+            background-color: #e74c3c;
+            border-radius: 50%;
+            animation: bounceBall 2s alternate infinite;
+            animation-delay: 4s;
+        }
+        .square {
+            background-color: #2ecc71;
+            animation: rotateSquare 3s infinite alternate-reverse;
+            animation-delay: 2s;
+        }
+
+        @keyframes moveBox {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(50px); }
+            100% { transform: translateX(200px); }
+        }
+
+        @keyframes bounceBall {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-150px); }
+        }
+
+        @keyframes rotateSquare {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="ball"></div>
+    <div class="square"></div>
+</body>
+</html>

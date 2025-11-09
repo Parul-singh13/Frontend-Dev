@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card and Body Background Change</title>
+    <style>
+        body {
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #aeb917;
+            transition: background-color 5s; 
+            min-height: 100vh; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            background-color: #cd5f5f; 
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 5s, transform 5s; 
+            text-align: center;
+        }
+
+        .card:hover {
+            background-color: #2fbed1;   
+            transform: scale(2.2);       
+        }
+
+        body:has(.card:hover) {
+            background-color: #2fbed1; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h3>Hover Over Me</h3>
+    </div>
+
+</body>
+</html>

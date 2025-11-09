@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+
+    .tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip-btn {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+
+    .tooltip-text {
+      position: absolute;
+      bottom: 130%;          /* place above the button */
+      left: 50%;             /* center horizontally */
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      opacity: 0;            /* hidden by default */
+      pointer-events: none;  /* avoid accidental hover */
+      transition: opacity 0.3s ease-in-out; /* smooth fade-in */
+    }
+
+    /* Small arrow below tooltip */
+    .tooltip-text::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: #333 transparent transparent transparent;
+    }
+
+    /* Show tooltip on hover */
+    .tooltip-container:hover .tooltip-text {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tooltip-container">
+    <button class="tooltip-btn">Hover me</button>
+    <span class="tooltip-text">This is a tooltip!</span>
+  </div>
+
+</body>
+</html>

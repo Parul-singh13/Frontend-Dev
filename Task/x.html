@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+    <style>
+        /*tooltip*/
+        .tooltiptext {
+            visibility:hidden;
+            position: absolute;
+            background-color: black;
+            color: #fff;
+            padding: 5px;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Box Model</h1>
+    <!--div class - under tooltip-->
+    <div class="tooltip">Hover over me!
+        <span class="tooltiptext">This is a tooltip text</span>
+    </div>
+</body>
+</html>

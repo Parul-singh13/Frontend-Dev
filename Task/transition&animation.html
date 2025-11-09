@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+        .btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: coral;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition:all 0.3s ease;
+        }
+        .btn:hover{
+            background-color: tomato;
+            transform: scale(1.1); 
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;
+            margin-top: 20px;
+            animation: moveBox 2s infinite alternate ease-in-out;
+        }
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+                background-color: lightseagreen;
+            }
+            50% {
+                transform: translateX(150px) rotate(20deg);
+                background-color: gold;
+            }
+            100% {
+                transform: translateX(300px);
+                background-color: lightseagreen;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h2>CSS Transition!</h2>
+    <button class="btn">Hover me!</button>
+    <div class="box"></div>
+</body>
+</html>

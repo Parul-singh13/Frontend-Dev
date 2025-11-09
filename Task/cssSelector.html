@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja Hattori's Selector Jutsu</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Element Selector: Styles all <p> (basic genin scrolls) */
+    p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Class Selector: Styles all elements with class="highlight" (Kenichi's camera flash) */
+    .highlight {
+      background-color: #ffff99; /* A bright flash yellow */
+      font-weight: bold;
+    }
+
+    /* ID Selector: Styles the unique element with id="main-title" (Hattori himself) */
+    #main-title {
+      text-align: center;
+      color: #3c3cef; /* Hattori's dark blue */
+      border-bottom: 3px solid #CC0000; /* Hattori's red scarf */
+      padding-bottom: 10px;
+    }
+
+    /* Attribute Selector: Styles <a> elements that have an 'href' attribute (secret maps) */
+    a[href] {
+      color: #006400; /* Ninja green */
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a[href]:hover {
+      text-decoration: underline;
+    }
+
+    /* Descendant Combinator: Styles any <li> *inside* a <ul> (ninpo in the scroll) */
+    ul li {
+      list-style-type: '🥷'; /* Ninja emoji as bullet */
+      padding-left: 10px;
+      margin: 5px 0;
+    }
+
+    /* Child Combinator: Styles <span> only if it's a *direct child* of <p> (a shuriken in hand) */
+    p > span {
+      color: #CC0000; /* Red for emphasis */
+      font-weight: bold;
+    }
+
+    /* Adjacent Sibling Combinator: Styles the <h2> *immediately following* the <h1> (Shinzō follows Hattori) */
+    h1 + h2 {
+      font-style: italic;
+      text-align: center;
+      color: #de1313;
+    }
+
+    /* General Sibling Combinator: Styles all <div> siblings *after* <h2> (Kagechiyo and Kemumaki lurking) */
+    h2 ~ div {
+      border: 2px dashed #00008B;
+      background-color: #e6f7ff; /* Light blue */
+      padding: 10px;
+      margin-top: 15px;
+    }
+    
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    footer p {
+        color: white;
+    }
+  </style>
+</head>
+<body>
+    <header>
+      <h1 id="main-title">Ninja Hattori's CSS Shinobi School</h1>
+      <h2>Mastering the Art of Selection Jutsu</h2>
+    </header>
+    
+    <section style="padding: 20px;">
+      <p>This is a basic genin technique (element selector). Nin-Nin!</p>
+      
+      <p class="highlight">This paragraph is caught by <span>Kenichi's camera flash</span> (class selector)!</p>
+      
+      <a href="https://example.com">A secret map to a hidden dojo (attribute selector).</a>
+    
+      <ul>
+        <li>Hattori Kanzo (Descendant)</li>
+        <li class="highlight">Shinzō Hattori (Descendant + Class)</li>
+        <li>Shishimaru (Descendant)</li>
+      </ul>
+    
+      <div>This scroll is found after the heading (general sibling). It contains secrets!</div>
+      <div>Kagechiyo is also lurking here (another general sibling).</div>
+    </section>
+    
+    <footer>
+      <p>&copy; 2024 Hattori-kun's Dojo. Nin-Nin!</p>
+    </footer>
+</body>
+</html>
