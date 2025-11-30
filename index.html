@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel ="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class = "conatiner">
+        <header>
+            <h1>Student Management System</h1>
+            <p class="subtitle">Manage your students efficiently</p>
+            
+        </header>
+        <div class="main-content">
+            <section class="form-section">
+                <h2>Add New Student</h2>
+                <form id="studentForm">
+                    <div class="form-grp">
+                        <label for="studentName">Student Name</label>
+                        <input type="text" id="studentName" required placeholder="Enter your name">
+
+                    </div>
+                    <div class="form-grp">
+                        <label for="studentId">Student Id</label>
+                         <input type="text" id="studentId" required placeholder="Enter student ID">
+                    </div>
+                    <div class="form-grp">
+                        <label for="studentEmail">Email</label>
+                        <input type="email" id="studentEmail" required placeholder="Enter email address">
+                    </div>
+                    <div class="form-grp">
+                        <label for="studentCourse">Course</label>
+                        <input type="text" id="studentCourse" required placeholder="Enter course name">
+                    </div>
+                    <div class="form-grp">
+                        <label for="studentGrade">Grade</label>
+                        <select id="studentGrade" required>
+                            <option value="">Select Grade</option>
+                            <option value="A+">A+</option>
+                             <option value="A">A</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="F">F</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Student</button>
+
+                </form>      
+                  </section>
+                  <section class="list-section">
+                <div class="list-header">
+                    <h2>Student List</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search students...">
+                    </div>
+                </div>
+                <div id="studentList" class="student-list">
+                    <p class="empty-message">No students added yet. Add your first student!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Student</h2>
+            <form id="editForm">
+                <input type="hidden" id="editIndex">
+                <div class="form-group">
+                    <label for="editName">Student Name</label>
+                    <input type="text" id="editName" required>
+                </div>
+                <div class="form-group">
+                    <label for="editId">Student ID</label>
+                    <input type="text" id="editId" required>
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">Email</label>
+                    <input type="email" id="editEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="editCourse">Course</label>
+                    <input type="text" id="editCourse" required>
+                </div>
+                <div class="form-group">
+                    <label for="editGrade">Grade</label>
+                    <select id="editGrade" required>
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B+">B+</option>
+                        <option value="B">B</option>
+                        <option value="C+">C+</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Update Student</button>
+            </form>
+        </div>
+    </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
